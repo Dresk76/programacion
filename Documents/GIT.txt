@@ -1,0 +1,455 @@
+			GIT
+
+
+
+*ESTADOS
+
+-working directoty: 
+Donde voy a estar trabajando con todos mis archivos
+
+-staging area: 
+Donde voy a estar agragando todos los archivos que van a estar listos para el guardado
+
+-repository: 
+Donde los voy a pasar cuando ya estan listos 
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+*|*Ver los archivos y carpetas
+
+	ls
+
+*|*|Ver los archivos ocultos
+
+	ls -rf
+
+*|*Para ver en donde estoy posicionado
+
+	pwd
+
+*|*Para ir a algun lugar o carpeta
+
+	cd
+
+*|*Si estoy escribiendo y no da nada, presionar la letra "i"
+
+	i
+
+*|*"w" para escribir "q" para salir
+
+	:wq
+
+*|*Para crear un archivo que me ignore las carpetas o archivos que tenga en el proyecto
+
+	.gitignore
+	
+///////////////////////////////////////////////////////////////
+
+
+*-*Configuración Básica
+
+*|*Configurar Nombre
+
+	git config --global user.name "dasdo"
+
+*|*Configurar Email
+
+	git config --global user.email dasdo1@gmail.com
+
+*|*Marco de colores para los comando
+
+	git config --global color.ui true
+
+*|*Para ver las configuraciones
+
+	git config --global --list
+
+*|*Eliminar algo de la configuracion global
+
+	git config --global -e
+
+
+
+*-*Iniciando repositorio*-*
+
+*|*Iniciamos GIT en la carpeta donde esta el proyecto
+
+	git init
+
+*|*Clonamos el repositorio de github o bitbucket
+
+	git clone <url>
+
+*|*Añadimos todos los archivos para el commit
+
+	git add .
+
+*|*Hacemos el primer commit
+
+	git commit -m "Texto que identifique por que se hizo         el commit"
+
+*|*subimos al repositorio
+
+	git push origin master
+
+*|*subimos al repositorio a las malas XD
+
+	git push origin master -f
+
+
+*-*GIT CLONE*-*
+
+*|*Clonamos el repositorio de github o bitbucket
+
+	git clone <url>
+
+
+*-*GIT ADD*-*
+
+*|*Añadimos todos los archivos para el commit
+
+	git add .
+
+*|*Añadimos el archivo para el commit
+
+	git add <archivo>
+
+*|*Añadimos todos los archivos para el commit omitiendo los nuevos
+
+	git add --all 
+
+*|*Añadimos todos los archivos con la extensión especificada
+
+	git add *.txt
+
+Añadimos todos los archivos dentro de un directorio y de una extensión especifica
+
+	git add docs/*.txt
+
+Añadimos todos los archivos dentro de un directorios
+
+	git add docs/
+
+
+
+*-*GIT COMMIT*-*
+
+*|*Cargar en el HEAD los cambios realizados
+
+	git commit -m "Texto que identifique por que se 		hizo el commit"
+
+*|*Arreglar el ultimo commit, este no se muestra como un nuevo    commit en los logs. Se puede especificar un nuevo mensaje
+
+	git commit --amend -m ""
+
+*|*Agregar y Cargar en el HEAD los cambios realizados
+
+	git commit -a -m "Texto que identifique por que se 		hizo el commit"
+
+*|*De haber conflictos los muestra
+
+	git commit -a 
+
+*|*Hace una copa de los commits a un txt
+
+	git log > commits.txt
+
+
+
+*-*GIT PUSH*-*
+
+*|*Subimos al repositorio
+
+	git push origin <branch>
+
+*|*Subimos un tag
+
+	git push origin <tag>
+
+*|*Subimos todos los tag
+
+	git push origin --tags
+
+
+
+*-*GIT LOG*-*
+
+*|*Muestra los logs de los commits
+
+	git log
+
+*|*Muestra los cambios en los commits
+
+	git log --oneline --stat
+
+*|*Muestra graficos de los commits
+
+	git log --oneline --graph
+
+
+
+*-*GIT HEAD Y RESET*-*
+
+*|*Saca un archivo del commit
+
+	git reset HEAD <archivo>
+
+*|*Devuelve los 2 ultimo commit y todos los cambios
+
+	git reset --hard HEAD^^
+
+*|*Elimina el ultimo commit pero el codigo permanece intacto
+
+	git reset --soft <commit>
+
+*|*Borra TODO lo que hay en el commit
+
+	git reset --hard <commit>
+
+*|*Quita del HEAD un archivo y le pone el estado de no trabajado
+
+	git checkout -- <file>
+
+
+
+*-*GIT REMOTE *-*
+
+*|*Agregar repositorio remoto
+
+	git remote add origin <url>
+
+*|*Lista los repositorios
+
+	git remote -v
+
+*|*Eliminar repositorio remoto
+
+	git remote remove origin
+
+*|*Cambiar de remote
+
+	git remote set-url origin <url>
+
+*|*Remover repositorio
+
+	git remote rm <name/origin>
+
+*|*Muestra los branches remotos
+
+	git remote show origin
+
+*|*Limpiar todos los branches eliminados
+
+	git remote prune origin 
+
+
+
+*-*GIT BRANCH*-*
+
+*|*Crea un branch
+
+	git branch <nameBranch>
+
+*|*Elimina el branch
+
+	git branch -D <nameBranch>
+
+*|*Lista los branches que hay
+
+	git branch
+
+*|*Lista los branches ocultos
+
+	git branch -a
+
+*|*Moverse de branch
+
+	git checkout <nameBranch>
+
+*|*Crea un branch y se mueve a él
+
+	git checkout -b <newBranch>
+
+*|*Comando -d elimina el branch y lo une al master
+
+	git branch -d <nameBranch>
+
+*|*Fusiona el branch master o actual con el nuevo    (debe posicionarse en el brench principal)
+
+	git merge <newBranch>
+
+*|*Baja los cambios que esten en el repositorio remoto a       origin/master
+
+	git fetch origin
+
+*|*Baja los cambios que esten en origin/master a 
+   el repositorio local y lo fuciona
+
+	git merge origin/master
+
+*|*sube los cambios que esten en el repositorio local a origin/master
+
+	git push origin master
+
+*|*Crea un branch en base a uno online
+	
+	git checkout -b newlocalbranchname         			origin/branch-name
+
+
+
+*-*GIT TAG*-*
+
+*|*Muestra una lista de todos los tags
+
+	git tag
+
+*|*Crea un nuevo tag a el ultimo commit
+
+	git tag -a <v0.9> -m "esta es la 				versión 0.9"
+
+*|*Crea un nuevo tag a un commit en especifico
+
+	git tag -a <v0.3> -m "esta es la 				versión 0.3" <codigo del commit>
+
+
+
+*-*OTROS COMANDOS*-*
+
+*|*Lista el estado del proyecto
+
+	git status
+
+*|*Moverse entre commits
+
+	git checkout <Codigo commit>
+
+*|*Busca los cambios nuevos y actualiza el repositorio
+
+	git pull origin <nameBranch
+
+*|*Borrar un archivo del repositorio
+
+	git rm <archivo> 
+
+*|*Para revertir los cambios de los archivos
+
+        git restore <file>
+
+*|*Muestra los cambios o diferencias realizados a un archivo
+
+	git diff
+	git diff --staged
+
+
+
+*-*Fork*-*
+
+*|* Clonar el archivo del fork
+
+	git clone <url>	
+
+*|*Bajar el commit de la organizacion
+
+	git fetch upstream
+
+*|*Bajar el commit de los colaboradores
+
+	git fetch origin
+
+*|*Descargar remote de un fork
+
+	git remote add upstream <url>
+
+*|*Merge con master de un fork
+
+	git merge upstream/master
+
+
+
+*-*SSH*-*
+
+*|*Verificar que tipo de verion tenemos de ssh
+
+	ssh -v
+
+*|*Generar la clave
+
+	ssh-keygen
+
+*|*Para ver la clave publica
+
+	cat id_rsa.pub
+
+*|*Conectarse a el servidor
+
+	ssh root<ip>
+
+*|*fetch + merch
+
+	git pull origin <brench>
+
+
+
+*-*HOOK*-*
+
+*|*Ver que hook hay en .git del proyecto / (ls) entrar en hooks (ls) / y crear uno*|*
+
+*|*Para crear un hook
+
+	touch <post-commit>
+
+*|*Decidir que se va a realizar con ese hook
+
+	nano ó bin <post-commit>
+
+*|*Escribir dentro de lo que abre (indica que es   un shell script)
+
+	#!/bin/sh
+
+*|*Ver lo que hay dentro del comando
+
+	cat <post-commit>
+
+*|*Ejemplo de hook commit a un servidor
+
+   git push origin <branch>
+   ssh root<ip ó @dominio> 'bash-s' < deployment.sh
+
+*|*Darle privilegios al commit para que lo abra git
+
+	chmod +x <post-commit>
+
+*|*Como pusimos que abrá "deployment.sh" entonces se    debe crear, desde la carpeta del proyecto
+
+	touch deployment.sh
+
+nano,#!/bin/sh,que ingrese a la carpeta donde esta el programa (cd), haga el pull, y lo reseteé
+
+
+ 
+*-*GIT REBASE*-*
+
+*--*Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al día con el master sin afectar al mismo*--*
+
+*|*Une el branch actual con el master, esto no se puede ver como un merge
+
+	git rebase
+
+*--*Cuando se produce un conflicto nos da las siguientes opciones:*--*
+
+*|*cuando resolvemos los conflictos --continue continua la secuencia del rebase donde se pauso
+
+	git rebase --continue 
+
+*|*Omite el conflicto y sigue su camino
+
+	git rebase --skip
+
+*|*Devuelve todo al principio del rebase
+
+	git reabse --abort
+
+*|*Para hacer un rebase a un branch en especifico
+
+	git rebase <nameBranch>

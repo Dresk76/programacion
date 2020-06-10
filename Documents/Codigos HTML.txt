@@ -1,0 +1,477 @@
+                                                                     <!-- ESTO ES LA CABECERA --> (HEAD)
+
+
+
+<!DOCTYPE html> ------------------------------------------------------------------------------------>Definir que es tipo HTML 5
+<html lang="es"> ----------------------------------------------------------------------------------->Definir el lenguaje
+<head> ---------------------------------------------------------------------------------------------> Cabeza de la pagina
+    <meta charset="UTF-8">  ------------------------------------------------------------------------>Recinicer caracteres como Ñ, Acentos, entre otros
+    <link rel="shortcut icon" href="Imgs/Perfil DK.jpg" type="image/x-icon"> ----------------------->Para establecer un icono en la pestaña
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> ------------------------->"Para que el contenido sea adaptable"
+    <meta property="og:image" content="logo de la imagen"> ----------------------------------------->Para 
+    <meta property="og:description" content="descripcion en la imagen"> ---------------------------->Para 
+    <meta property="og:title" content="Felipe Agudelo | Designer"> --------------------------------->Para 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> ------------------------------------------>Compatibilidad con Internet Explorer
+    <meta name="description" content="Todo lo que quiera que salga en google"> --------------------->Todo lo que quiera que salga en google
+    <meta name="keywards" content="Palabras clave para que posicionamiento de la pagina"> ---------->Palabras o frases clave
+    <meta name="author" content="Felipe Agudelo" --------------------------------------------------->Nombre del autor de la pagina
+    <meta name="copyright" content="DRESK Designer" ------------------------------------------------>Meta de copyright
+    <meta name="robots" content="index" ------------------------------------------------------------>Permite que aparezca en las opciones de busqueda(index/noindex)
+    <meta name="robots" content="follow" ------------------------------------------------------------>Dar importancia en el co (follow/nofollow)
+    <title>Document</title> ------------------------------------------------------------------------>NNombre de ls pagina
+    <link rel="stylesheet" href="style.css"> ------------------------------------------------------->CSS
+</head>
+
+
+
+
+
+
+
+
+                                                                   <!-- ESTO ES EL CUERPO (BODY)-->
+
+
+
+
+
+
+                                                               <!-- ESTOS SON LOS ELEMENTOS DE ARMADO -->
+
+
+<div>
+     <h1>TAMAÑO DE LETRAS</h1> ---------------> DE MAYOR
+     <h2>TAMAÑO DE LETRAS</h2>
+     <h3>TAMAÑO DE LETRAS</h3>
+     <h4>TAMAÑO DE LETRAS</h4>
+     <h5>TAMAÑO DE LETRAS</h5>
+     <h6>TAMAÑO DE LETRAS</h6> ---------------> A MENOR
+     <div></div> ------------------------------------------->Contenedor de texto o imagenes
+</div>
+
+
+
+
+
+
+
+                                                                      <!-- HIPERVINCULOS O LINKS -->
+
+
+<a href="https://instagram.com" rel="nofollow" target="blank_">Click aqui</a> -->Para abrir links 
+                                                                                *target: Decir como se llama el link y que se abra en una pestaña aparte
+                                                                                *rel: para optimizarlo al momento del posicionamiento de paginas
+
+
+<a href="Prueba.html">Ir a la prueba</a> --------------------------------------->Ir a otro link en la pagina, el cual es una pestaña del proyecto
+
+
+<a href="rutas/Prueba.html">Ir a la prueba</a> --------------------------------->Ir a otro link en la pagina, pero que en el proyecto este en otra carpeta
+
+
+<a href="../../luminarias.html">Volver a la pagina principal</a> --------------->Ir a un link que este en carpetas anteriores a la principal "../" la cantidad de veces que se                                                                           pone, es la misma cantidad de carpetas que este afuera
+
+
+<a href="#algo">escribir</a> --------------------------------------------------->Esto es para que baje rapido a un lugar deseado
+<p id="algo"> escribir </p> ---------------------------------------------------->El id debe ser el mismo que el de la etiqueta
+<h3 id="algo">escribir<h3> ----------------------------------------------------->El id debe ser el mismo que el de la etiqueta
+                                                                                *IMPORTANTE*: (El id debe ir solo en uno, #: se utiliza para id)
+
+
+<me src="https://alexcgdesign.com/udemy" frameborder="0"width="300" height="400"> </iframe> ----------------->Para poner otra pagina web en la pagina                                                                                                            
+
+
+<a href="https://google.com"target="blank_"><img src="imagen.jpg" alt="imagen" title="imagen"></a> ------>Esto es para anidar un link a una imagen
+
+
+
+ESTO SE SACA DE GOOGLE MAPS PARA LA UBICACION:
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2234517080706!2d-75.51947368523626!3d5.067496896321928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476ffa140f94a5%3A0x25810bc036523ce7!2sCatedral%20bas%C3%ADlica%20de%20Nuestra%20Se%C3%B1ora%20del%20Rosario%20de%20Manizales!5e0!3m2!1ses!2sco!4v1590162293789!5m2!1ses!2sco" width="200" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+
+ESTO SE SACA DE YOUTUBE PARA ADJUNTAR UN VIDEO EN LA PAGINA:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PuRVbbzvSlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                                                           
+
+
+
+
+                                                                      <!-- MARCADO DE TEXTO -->
+
+
+EJEMPLO:
+    <div>
+        <h1>Ejemplo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam consequuntur adipisci mollitia, eum ratione nesciunt enim <b> sapiente corporis </b>         debitis alias at veniam, dignissimos, inventore voluptate. Ut nisi perferendis hic repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. <em> Id         dolore officiis </em> nam iusto, distinctio repudiandae nemo rem quod animi molestias error, explicabo voluptas quas temporibus velit, dolor quibusdam minima         voluptate.</p>
+    </div>
+
+
+<b></b> ---------------------------------------------------------------------------->Pone la palabra o frase deseada en Negrita
+
+
+<strong></strong> ------------------------------------------------------------------>Pone la palabra o frase deseada en Negrita Y Resalta que es Importante pata que la                                                                                      posicione en el buscador 
+
+
+<i></i> ---------------------------------------------------------------------------->Pone la palabra o frase deseada en Cursiva
+
+
+<em></em> -------------------------------------------------------------------------->Pone la palabra o frase deseada en Cursiva Y Resalta que es Importante pata que la                                                                                      posicione en el buscado
+
+
+<abbr title="Señor">Sr.</abbr>Felipe Agudelo --------------------------------------->Etiqueta de abreviacion
+
+
+<p>La <acronym title="Organizacion de la Naciones 
+Unidades">ONU</acronym> advirtio que en los proximos meses </p> --------------------> Es para los Acronimos
+
+
+
+<address>
+telefono:3134912612 
+Cra 1d#10-30 Celula 15 Nucleo 1 apto. 504 ------------------------------------------> Se utiliza para agregar Datos personales y los deja en cursiva
+Colombia-Manzales
+</address>
+
+
+<dfn>HTML</dfn> Es un lenguage de marcado ------------------------------------------>Es para definir algo (pone la palabra a definir grande y cursivo y al lado en                                                                                           normal la definifcion)
+
+
+<cite>El Grito</cite> Fue hecho por Edward Munch, en el año 1893. ------------------>Es para citar algun autor u obra (Generalmente van debajo una imagen)
+
+
+<small></small> -------------------------------------------------------------------->Pone la palabra o frase deseada en Texto mas Pequeño
+
+
+<sub></sub> ------------------------------------------------------------------------>Pone la palabra o frase deseada en la Superficie de Abajo
+
+
+<sup></sup> ------------------------------------------------------------------------>Pone la palabra o frase deseada en la Superficie de Arriba
+
+
+<span></span> ---------------------------------------------------------------------->Sirve para agrupar elementos en linea
+
+
+<p></p> ---------------------------------------------------------------------------->Para escribir parrafos
+
+
+<br> ------------------------------------------------------------------------------->Salto de linea
+
+
+<pre></pre> ------------------------------------------------------------------------>Para escribir parrafos y darle          espacios largos entre palabras
+
+
+
+
+
+
+
+                                                                            <!-- LISTAS -->
+
+
+EJEMPLO:
+    <ul>
+        <li> escribir </li>
+        <li> escribir </li>
+    </ul>
+
+    <ol>
+        <li> escribir </li>
+        <li> escribir </li> 
+    </ol>
+
+
+<ul></ul> -------------------------------------------------------------------------->Significa que va a ir una lista Desordenada (PUNTOS)
+
+
+<ol></ol> -------------------------------------------------------------------------->Significa que va a ir una lista Ordenada (NUMERADA)
+
+
+<li></li> -------------------------------------------------------------------------->Datos que va a llevar la lista
+
+
+EJEMPLO:
+<dt>
+    <dl>Caefe</dl>
+    <dd>Es una bebida estimulante</dd>
+    <dl>Chocolate</dl>
+    <dd>Producto sacado del cacao</dd>
+</dt>
+
+
+<dl></dl> -------------------------------------------------------------------------->Se utiliza para definir
+
+
+<dt></dt> -------------------------------------------------------------------------->Es la palabra definir
+
+
+<dt></dt> -------------------------------------------------------------------------->Es el termino a ser definido
+
+
+
+
+
+
+
+                                                                           <!-- TABLAS -->
+
+
+EJEMPLO:
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Titulo</th>
+            <th>Titulo</th>
+        </tr>
+        <tr>
+            <td>relleno</td>
+            <td>relleno</td>
+            <td>relleno</td>
+        </tr>
+        <tr>
+            <td>relleno</td>
+            <td>relleno</td>
+            <td>relleno</td>
+        </tr>
+    </table>
+
+
+<table></table> -------------------------------------------------------------------->Declarar una tabla
+
+
+<caption>titulo</caption> ---------------------------------------------------------->Crea el titulo
+
+
+<tr></tr> -------------------------------------------------------------------------->Declarar que se va a crear una fila en la Tabla
+
+
+<th></th> -------------------------------------------------------------------------->Titulo de las columnas (Filas en Negrita)
+
+
+<td></td> -------------------------------------------------------------------------->Contenido en la tabla (Se va escriviendo en filas)
+
+
+
+	*NOTA*:PARA RELLENAR LOS ESPACIOS DE FILAS O CLUMNAS, POR SI SOLO QUEREMOS QUE EN LA TABLA HAYA UNA FILA O COLUMNA ENTERA
+
+
+colspan="cololocar un numero" -------------------------------------------------------->Se coloca para que ocupe toda una fila
+
+rowspan="cololocar un numero" -------------------------------------------------------->Se coloca para que ocupe toda una columna
+
+
+
+EJEMPLO:
+
+    <table>
+        <tr>
+            <th colspan="3">Titulo</th>
+        </tr>
+        <tr>
+            <td rowspan="4">relleno</td>
+        </tr>
+        <tr>
+            <td>relleno</td>
+            <td>relleno</td>
+            <td>relleno</td>
+        </tr>
+        <tr>
+            <td>relleno</td>
+            <td>relleno</td>
+            <td>relleno</td>
+        </tr>
+        <tr>
+            <td>relleno</td>
+            <td>relleno</td>
+            <td>relleno</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+                                                                       <!-- ARCHIVOS MULTIMEDIA -->
+
+
+IMAGENES:
+
+
+<img src="Mama.jpg" alt="Flor Agudelo"title="Flor Agudelo"> ------------------------>Agregar Imagenes 
+                                                                                     *src: "Nombre de la imagen.jpg o png" 
+                                                                                     *alt: Por si la imagen no carga que se le agrega un titulo para que diga algo
+                                                                                     *title: Nombre en la imagen para cuando se pase el cursor sobre ella
+
+
+AUDIO:
+
+<audio src="media/Thunder.mp3" controls></audio> ----------------------------------->Agregar Audios
+
+
+VIDEOS:
+
+<video src="media/video.mp4" width="500" controls autoplay loop poster="png"></video> ----------->Agregar Videos
+                                                                                     *autoplay: Para que se reproduzca automaticamente
+                                                                                     *loop: Para que se repita infinitas veces
+                                                                                     *poster: Coloca una imagen antes de reproducirse el video
+
+
+
+
+
+
+
+                                                                            <!-- FORMULARIOS -->
+
+
+
+	*NOTA*: Es mejor que todo vaya con "LABEL" el cual el "FOR" debe ser igual al "ID"
+
+
+
+
+<fieldset></fieldset> --------------------------------------> Para craer un contorno en las secciones de formularios deseadas
+
+<form action="formulario.php" method="post">
+
+
+<form action="formulario.php" method="post"></form> --------------------------------------->Se declarar para crear un formulario 
+                                                                                           *action: Es el lugar donde se van a procesar todos los datos que vayamos a                                                                                                       enviar del formulario, debe ser a un arvhivo PHP
+                                                                                           *method: se pone "post" porque no se envian las variables a PHP de manera                                                                                                     visible
+
+
+<input type=""> --------------------------------------------------------------------------------->Para agregar textos, button, entre otros
+
+
+<input type="checkbox" name="" id="" value=""> -------------------------------------------------->Bueno es un checkbox
+                                                                                                  *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="file" name="archivo" id="" accept=".jpg,.mp4"> ------------------------------------->Para agregar Archivos
+                                                                                                  *accept: Para restringir que tipo de archivo requerimos
+                                                                                                  *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="text" value="" name="" id="" placeholder="Escribir" maxlength="8" required> -------->Para agregar un text
+                                                                                                  *placeholder: Para que tenga algo escrito y se borre al escribir
+                                                                                                  *maxlength: Para definir la cantidad de carateres
+                                                                                                  *required: Para que salga un anuncio solicitando que se debe                                                                                                             llenar el textbox
+                                                                                                  *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="number" name="numero" id="" placeholder="Edad" max="8" min="3"> --------------------->Para crear una eleccopn de numeros
+                                                                                                   *max: Definir el mayor numero
+                                                                                                   *min: Definir el menor numero
+                                                                                                   *placeholder: Para que tenga algo escrito y se borre al escribir
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{8}" placeholder="123-xxxxxx" required> --->Es como para tarjetas de credito o codigos
+
+
+<input type="range" name="rango" id="" min="0" max="10" step="2"> -------------------------------->Para crear una scrollbar horizontal
+                                                                                                   *max: Definir el mayor numero
+                                                                                                   *min: Definir el menor numero
+                                                                                                   *step: Definir saltos
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="submit" value="Enviar"> ------------------------------------------------------------->Para crear un Boton que envíe todo el formulario resuelto 
+                                                                                                   *value: Texto del boton
+
+
+<input type="reset" value="Restablecer"> --------------------------------------------------------->Para crear un Boton que reinicie todo el formulario resuelto 
+                                                                                                   *value: Texto del boton
+
+
+<input type="date" name="fecha" id="datemax" max="2020-05-23">------------------------------------>Para agregar una fecha
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+                                                                                                   *max: Se coloca por si se quiere definir una fecha maxima a elegir
+
+
+<input type="time" name="" id=""> ---------------------------------------------------------------->Para establecer una hora
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="email" name="correo" id="" placeholder="Dame tu email" required> -------------------->Es un textbox que se usa solo para ingresar un email
+                                                                                                   *placeholder: Para que tenga algo escrito y que se borre al escribir
+                                                                                                   *required: Para que salga un anuncio solicitando que se debe llenar                                                                                                     el textbox, y sino lleva los caracteres de email lo anuncia
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+
+
+
+<input type="radio" value="man" name="genero" id="man"> ------------------------------------------->Para agregar un Radiobutton
+<label for="man">Hombre</label> ------------------------------------------------------------------->Se agrega un Label para que el RadioButton se vea con un nombre
+<input type="radio" value="women" name="genero" id="man"> ----------------------------------------->Para agregar un Radiobutton                                         <label for="women">Mujer</label> ------------------------------------------------------------------>Se agrega un Label para que el RadioButton se vea con un nombre
+                                                                                                    *En este caso hay 2 RadioButton para que elija el tipo de sexo,                                                                                                          para que no seleccione ambos, debe compratir el mismo "name"
+                                                                                                    *El "id" y el "for" debes ser iguales para que pueda dar click en                                                                                                        el Label y lo reconozca
+
+
+<input type="password" name="contraseña" id="" placeholder="Contraseña" required>----------------->Para escribir contraseña
+                                                                                                   *placeholder: Para que tenga algo escrito y que se borre al escribir
+                                                                                                   *required: Para que salga un anuncio solicitando que se debe llenar                                                                                                     la contraseña
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+
+
+<input type="button" onclick="alert('Mensaje enviado')" value="Enviar"> --------------------------->Para crear un boton que genere un mensaje de alerta
+
+
+<textarea name="escribir" id="" cols="30" rows="10" placeholder="Comentarios"></textarea> --------->Para crear un recuadro de comentarios
+                                                                                                   *name: Se debe llenar para que lo reconozca el PHP
+
+
+<label for="algo">Escribir algo</label> ----------------------------------------------------------->Label
+                                                                                                   *for: escribir lo mismo que va en el "id"
+
+
+
+<select name="curso" id="curso"> ------------------------------------------------------------------>Para elegir entre una lista de opciones deseada
+    <option value="JAVA">JAVA</option> ------------------------------------------------------------>Opcion 1
+    <option value="HTML">HTML</option> ------------------------------------------------------------>Opcion 2
+    <option value="CSS">CSS</option> -------------------------------------------------------------->Opcion 3
+</select>
+
+
+</form>
+
+
+</body>
+</html>
+
+
+
+
+                                                               <!-- ELEMENTOS HTOML5 BASICOS -->
+
+	
+<header class="" id=""> -------------------------------->Cabecera
+    <nav class="" id="">
+    </nav>
+</header>
+
+<main class="" id=""> ---------------------------------->Cuerpo
+    <section class="" id="">
+        <article class="" id="">
+
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+</main>
+
+<footer class="" id=""> --------------------------------->Pie de pagina
+
+</footer>
+

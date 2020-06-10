@@ -1,0 +1,122 @@
+*-*Ilustraciones*-*
+	
+	https://undraw.co/illustrations
+	https://www.manypixels.co/gallery/
+
+
+*-*Waves*-*
+	https://smooth.ie/blogs/news/svg-wavey-transitions-			between-sections
+
+	https://getwaves.io/
+preserveAspectRatio="none"
+
+
+*-*Imagenes sin Copy Right*-*
+
+	https://www.pexels.com/es-es/
+	https://unsplash.com/
+	https://pixabay.com/es/images/
+
+
+*-*Para el favicon*-*
+
+	https://favicon.io/
+
+
+*-*Comprimir imagenes para que no pesen tanto al momento de subirlas*-*
+
+	https://imagecompressor.com/es/
+
+
+*-*Transformaciones y Transiciones*-*
+
+	*|*Figuras*|*
+		https://bennettfeely.com/clippy/
+
+	*|*Transiciones*|*
+		https://cubic-bezier.com/#.17,.67,.83,.67
+
+
+*-*Colores*-*
+
+	https://htmlcolorcodes.com/color-picker/
+	https://color.adobe.com/es/create/color-wheel
+
+
+*-*Gradientes*-*
+
+	https://www.w3schools.com/colors/colors_gradient.asp
+	https://uigradients.com/#Rastafari
+	https://webgradients.com/
+
+
+
+*-*Fuentes de texto*-*
+
+	https://fonts.google.com/?query=mys
+
+|*LATO
+
+|*RELEWAY
+	
+
+*-*Iconos*-*
+
+	https://icon-icons.com/es/
+	https://boxicons.com/
+	https://fontawesome.com/kits/f64b62abdb/use
+
+*-*Redes sociales*-*
+
+	https://fontawesome.com/kits
+
+
+*-*Emojis*-*
+
+	https://getemoji.com/
+
+
+*-*Para edicion*-*
+
+	https://www.figma.com/
+	https://www.blobmaker.app/
+
+
+
+*-**|**-*TABLA PARA CAMBIAR LOS COLORES DE CMD*-**|**-*
+
+	https://www.abrirllave.com/cmd/comando-color.php
+
+
+------------------------------------------------------------------------------------------------------------------------------
+APRENDER SI O SI "GIT, CANVAS,PHP, MYSQL, PERL, FIGMA"
+
+
+ver despues de html
+https://ed.team/cursos/programacion
+
+background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+
+----------------------------------------------------------------------------------------------------------------------------
+
+https://devcode.la/cursos/html-css/: HTML Y CSS GRATIS CON CERTIFICADO
+https://www.nigbox.com/mis-cursos/curso-de-css-basico-desde-cero/#/felicidades CURSO ONLINE GRATUITO
+https://www.oyejuanjo.com/2019/11/curso-online-de-html-y-css-certificado.html CURSO ONLINE GRATUITO
+https://codigofacilito.com/cursos/CSS-old CURSO ONLINE GRATUITO
+https://www.udemy.com/course/curso-diseno-web-moderno-desde-cero/?couponCode=ULTIMO-CUPON-MAYO COMPRAR
+
+https://learndigital.withgoogle.com/activate/sign-in?destination_url=https%3A%2F%2Flearndigital.withgoogle.com%2Factivate%2Fregistration%3Fdestination_url%3D%252Factivate%252Fcourse%252Fweb-development-I%253Fenroll-confirmation%253D1    *DE GOOGLE*
+
+------------------------------------------------------------------------------------------------------------------------------
+                                                                       	 MI SEMANA
+
+                                                       DESPIERTO  (Lun 05:00 - Mar 21:00) 40 HORAS
+                                                         DORMIR   (Mar 21:00 - Mie 05:00)  8 HORAS
+                                                       DESPIERTO  (Mie 05:00 - Jue 21:00) 40 HORAS
+                                                         DORMIR   (Jue 21:00 - Vie 05:00)  8 HORAS
+                                                       DESPIERTO  (Vie 05:00 - Sab 21:00) 40 HORAS
+                                                         DORMIR   (Sab 21:00 - Dom 05:00)  8 HORAS
+                                                            DIA NORMAL (Dom 05:00 - Dom 21:00) 16 HORAS / 8 HORAS
+
+<- Total de horas en MI SEMANA - DESPIERTO:136 DORMIR:32 ->
+----------------------------------------------------------------------------------------------------------------------------

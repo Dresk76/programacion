@@ -1,0 +1,458 @@
+                                                                        /* CSS */
+                                                                
+
+
+
+
+
+<link rel="stylesheet" href="estilos.css"> /* COLOR Y TEXTO*/ ----------------------------------------> Esto va debajo del "tittle" en HTML
+
+
+
+
+NORMALIZE.CSS:
+img{
+max-width: 100%; -------------------------------------------------->Para que las imagenes en dispositivos moviles se vean al 100%
+}
+
+
+@font-face{
+    src: url('carpeta/fuente.ttf'); ----->Esto es para cuando se descarga una fuente de internet
+    font-family: fuente.ttf;                                       *Esto va al principio de la hoja de CSS (antes de body)
+}
+
+
+*{
+	 box-sizing: border-box;------->Para mantener las medidas que declaramos en las cajas como son
+	margin=0
+	padding=0
+{ 
+
+
+:root{                      ---------------------------------------> Para crear una variable 
+--variable-color-algo: #4r6
+}
+
+
+text-shadow: 5px 15px cornsilk; ----------------------------------->Para colocarle sombras a un titulo
+
+letter-spacing: 0px; ---------------------------------------------->Crea un espacio entre las letras
+
+font-weight: 100; ------------------------------------------------->Para el grosor de la letra
+
+line-height: 1px; ------------------------------------------------->Esto es lo que ocupa el tamaño de letra desde el centro hacia arriba y abajo
+
+text-align: center; ----------------------------------------------->Para cambiar el sentido del texto
+
+text-decoration: line-through; ------------------------------------>Tacha todo el texto
+
+list-style: none; ------------------------------------------------->Para quitar los digitos de las listas
+
+scroll-behavior: smooth; ------------------------------------------>Para que cuando de click en un enlace que me baje en la misma pagina, baje el scrool lento
+
+overflow: auto; --------------------------------------------------->Es para lo que se sale de la pantalla, pone un scroll cuando lo requiere
+
+overflow: hidden; -------------------------------------------------->Es para lo que se sale del contenedor, lo recorta
+
+box-shadow: 10px 15px 20px white; -------------------------------->Esto hace una especie de sombra en 3D
+
+[class*=x]{ ------------------------------------------------------>Todas las clases que tengan x for example
+
+
+
+
+                                                                        /* Pseudo-Clases y Elementos */
+
+
+
+
+h1:first-child --------------------------------------->Afecta al primer elemento del contenedor
+
+h1:last-child ----------------------------------------->Afecta al ultimo elemento del contenedor con el mismo nombre
+
+h1:nth-child(0n+3){  ---------------------------------->Afecta a un elemento en especifico del contenedor con el mismo nombre
+                                                       *(0n+3): Asi como esta,significa que va a empezar a seleccionar el que esta en posicion 3 y despues va a 
+                                                        selecionar de 0 en 0
+
+
+.x p::first-line ------------------------------------>Cambia el color de la primera linea del texto (No funciona para ningun "in-line")
+
+.x h1::first-letter --------------------------------->Cambia el color de la primera palabra del texto (No funciona para ningun "in-line")
+
+x.text::placeholder --------------------------------->Cambia el color del placeholder
+
+x.text::selection ----------------------------------->Cambia el tipo de selecionar en fondo y color de letra (como cuando se seleciona algo para copiarlo)
+
+x::before ------------------------------------------->Para escribir antes de algo, se agrega para poder escribir "content: 'que tal'"
+
+b::after -------------------------------------------->Para escribir despues de algo, se agrega para poder escribir "content: 'que tal'"
+
+
+
+
+a:link -------------------------------------------->Para que tenga un cambio de color, antes de ingresar a el link
+
+a:visited ----------------------------------------->Para que tenga un cambio de color, despues de ingresar a el link
+
+a:hover ------------------------------------------->Para que el link cambie de color en el fondo y la letra al pasar el cursor sobre él
+
+a:active ------------------------------------------>Para que el link cambie de color en el fondo y la letra al dejar presionado
+
+transition: color 1s; ----------------------------->Para cambiar el tiempo de transicion
+
+text-decoration: none; ---------------------------->Para quitar la raya que hace referencia a que es un link
+
+text-decoration: underline; ----------------------->Para poner la raya que hace referencia a que es un link
+
+
+
+
+
+                                                                                 /* Enlaces */
+
+
+
+* Cuando tenemos una pagina adicional para modificarla con CSS se debe colocar <Style></Style>
+
+EJEMPLO:
+
+<title>Java</title>
+<style>
+    body{
+        background-color: brown;
+        color: white;
+        font-size: 45px;
+    }
+</style>
+
+
+
+                                                                        /* Cajas Flotantes */
+
+
+
+
+img{
+    float: left;   -------------------------------------------------> Para aplicar un objeto flotante se coloca "float" y la direccion que en este caso es "left"
+}                                                                     *las direcciones pueden ser "left" o "right"
+
+
+
+
+
+                                                                          /* Position */
+
+
+
+
+*Mover cualquier objeto que este en este contenedor
+
+
+position: absolute; ------------------------------------------>Genera un lugar o posicion absoluta
+
+position: relative; ------------------------------------------>Se mueve le objeto pero me reserva su espacio, (este puede ir dentro del "absolute")
+
+position: fixed; --------------------------------------------->Para que se mantenga innamobible en la pagina, asi bajen a leer o ver algo, este elemento
+                                                               permanece en la pagina
+
+position: sticky; -------------------------------------------->Se comporta como un "fixed" cuando llegamos al punto en el que le decimos
+
+z-index: 50; ------------------------------------------------->Posicional los objetos encima del otro, asi esten en HTML por debajo
+
+
+
+
+                                                                           /* Listas */
+
+
+ul{
+    list-style-image: url('icono.png');  --------------------->Para agregar un icono personalizado en la lista
+    list-style: none;   -------------------------------------->Para desaparecer el icono de una lista desordenada
+    padding: 0px;   ------------------------------------------>Cuando se pone el "padding" en valor "0" es mejor para que centre todo igual 
+}
+
+
+ol{
+    list-style: upper-roman;   ------------------------------->Cambiar numeros de lista a numeros Romanos
+    list-style: upper-latin;   ------------------------------->Cambiar numeros de lista a letras Mayusculas
+    list-style: lower-latin;   ------------------------------->Cambiar numeros de lista a letras Minusculas
+
+
+
+
+
+                                                                   /* Imagenes y Fondo */
+
+
+
+
+.mama img{   --------------------------------------------->Asi se declara para editarla en CSS (.clase img)
+border-radius: 60px;   ----------------------------------->Esto en imagen JPG redondea las puntas (Aca se maneja px)
+border-radius: 50%;   ------------------------------------>Esto en imagen JPG redondea toda la foto (Aca se maneja %)
+border: 3px red solid;   --------------------------------->Esto en imagen JPG crea un contorno
+padding: 8px;   ------------------------------------------>Esto en imagen JPG junto con el "border" deja el contorno fuera, como una especie de marco               
+box-shadow: 10px 15px 20px white;   ---------------------->Esto hace una especie de sombra en 3D
+}                                                         *10px: Horizontal
+                                                          *15px: Vertical
+                                                          *20px: Difumunado por todos los lados
+
+drop-shadow (x px,x px,x px #000) ---------------------->A las imagenes trransparentes les genera una especie de bordeado interno
+
+background-attachment: fixed; --------------------------->BRUTAL!!!! Baja el srool y permanece el fondo o imagen contenedor
+
+filter: blur(5px) --------------------------------------->Desenfoca la imagen
+
+filter: contrast(1.5) ----------------------------------->Contraste de la imagen (hay mas valores para probar)
+
+
+
+background-image: url(imagenes/imagen-uno.jpg); -------------------------> *Para poner una imagen desde CSS, sobre un texto de HTML*
+height: 280px;
+background-position: center;
+
+object-fit: cover; -------------------------------------->La imagen se adapta al contenedor
+
+object-position: left; ---------------------------------->Muestra mas un lado de la imagen que deseemos
+
+vertical-align: top; ------------------------------------>Quita el espaciado entre imagenes
+
+
+
+
+
+
+
+
+                                                                          /* FLEXBOX */ 
+
+
+
+display: flex; ------------------------------------------>Para comenzar a declarar que se va a utilizar el contenedor con flex
+
+flex-direction: row-reverse ----------------------------->Cambia la direccion de manera horizontal
+
+flex-direction: column ---------------------------------->Cambia la direccion de manera vertical
+
+flex-wrap: wrap ----------------------------------------->Adiciona a abajo la siguiente caja, al reducir la pantalla
+
+justify-content: center --------------------------------->Para modificar el contenido en el contenedor, en el centro
+
+justify-content: space-evenly --------------------------->Para que reparta el espacio equitativamente
+
+align-items --------------------------------------------->Centra el objeto Verticalmente
+
+align-content ------------------------------------------->Centra el objeto Verticalmente
+
+align-self ---------------------------------------------->Mueve solo un cuadro en diferentes posiciones Verticales
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                           /* GRID */
+
+
+
+Grid Container ------------------------------------------>Es el contenedor
+
+Grid item ----------------------------------------------->Es cada uno de los elementos que ponemos
+
+Grid cell ----------------------------------------------->Van dentro de los grid item
+
+Grid tracks --------------------------------------------->Son las filas y columnas
+
+Grid area ----------------------------------------------->Son un conjunto de celdas
+
+Grid linea ---------------------------------------------->Son las que definen las filas y columnas estan la Colum line y Row line
+
+
+
+display: grid; ------------------------------------------>Para comenzar a declarar que se va a utilizar el contenedor con GRID
+
+
+
+
+.x:first-chield ----------------------------------------->Para seleccionar el primer item
+
+.x:nth-child(2) ----------------------------------------->Para seleccionar el cualquie item
+
+
+
+
+grid-template-columns: 0px; ----------------------------->Da el numero de Columnas
+                                                        (Aplica SOLO a Grid container)
+
+grid-template-rows: 0px; -------------------------------->Da el numero de Filas
+                                                        (Aplica SOLO a Grid container)
+
+
+
+repeat(x, xxxpx) ---------------------------------------->Da el numero y la cantidad de cuadros a generar
+
+minmax(xpx, auto) --------------------------------------->Es el minimo y maximo de los item
+
+span ---------------------------------------------------->Se puede adicionar span para no contar las lineas (1 / span 3) empieza en la 1 y cuenta 3
+
+Unidades(Auto y Fr ) (1fr;) ----------------------------->Vuelve una columna semidinamica
+
+
+
+auto-fill ---------------------------------------------->Genera filas y columnas a como de lugar
+
+auto-fit ------------------------------------------------>Escala los elementos
+
+
+
+
+grid-row-gap -------------------------------------------->Se separan las Filas, es como un Margin, es la distancia que va a ver una celda y otra,                                                                                (Aplica SOLO a Grid Container)
+
+grid-column-gap ----------------------------------------->Se separan las Columnas, es como un Margin, es la distancia que va a ver una celda y otra,                                                                            (Aplica SOLO a Grid Container)
+
+grid-gap ------------------------------------------------>Se separan todas las celdas tanto filas como columnas
+                                                         (Aplica SOLO a Grid Container)
+
+
+
+grid-column: 1/3 ----------------------------------------->Ocupa columnas
+                                                         (Aplica SOLO a Grid Item)
+
+grid-row: 1/3; ------------------------------------------->Ocupa filas
+                                                         (Aplica SOLO a Grid Item)
+
+
+
+grid-auto-flow: ------------------------------------------>Para que los cuadros o div adicionales se vallan posicionando uno tras del otro
+
+grid-auto-flow: dense ------------------------------------>Para ocupar los espacios que estan vacios
+
+grid-auto-rows ------------------------------------------->Cambia de posicion la fila o columna
+
+
+
+justify-items -------------------------------------------->Modifica los items de diferentes maneras Verticalmente
+
+align-items ---------------------------------------------->Modifica los items de diferentes maneras Horizontalmente
+
+
+
+justify-content ------------------------------------------>Modifica el contenedor de diferentes maneras Horizontalmente
+                                                           *puede usar ademas (space-around / space-evenly / space-between que modifica la distancia entre las cajas)
+
+align-content -------------------------------------------->Modifica el contenedor de diferentes maneras Horizontalmente
+                                                          *puede usar ademas (space-around / space-evenly / space-between que modifica la distancia entre las cajas)
+
+
+
+align-self ---------------------------------------------->Modifica un solo cuadro de diferentes maneras Horizontalmente
+
+justify-self -------------------------------------------->Modifica un solo cuadro de diferentes maneras Verticalmente
+
+place-self ---------------------------------------------->Modifica un solo cuadro de diferentes maneras Horizotamente y Verticalmente
+
+order:x ------------------------------------------------->Intercambia un cuadro por el otro
+
+
+
+
+                                                                      /* Responsive Design */
+
+@media screen and (min-width: 400px){
+    .div-responsive {
+    
+    }
+}
+
+
+                                                                          /* Transition */
+
+
+transition-property: --------------------------------->Transicon de la propiedad como por ejemplo a un background-color
+
+transition-duration: --------------------------------->Tiempo de la transicio
+
+transition-delay: ------------------------------------>Tiempo de duracion del cambio al dejar el cursor sobre el y al retirarlo
+
+transition-timing-function --------------------------->Transicion en tiempo de funcion
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-out;
+    transition-timing-function: linear;
+
+
+
+                                                                          /* Animaciones */
+
+
+
+@keyframes despazarse{   ---------------------->Se le establece un "nombre deseado"
+    from ó 0%{   ------------------------------>Cualquiera de las dos opciones es valida
+    left: 0;   -------------------------------->Punto de partida
+}
+    to ó 100%{   ------------------------------>Cualquiera de las dos opciones es valida
+    left: 80%;   ------------------------------>Punto de llegada
+}
+}
+
+Estos datos se deben proporcionar en la caja que se desea realizar esto,  "Actualice la pagina"
+
+    animation-name: desplazarse; ------------>"nombre deseado"
+    animation-duration: 1s;
+    position: relative;
+
+
+animation-timing-function ---------------------->Mas opciones como en las transiciones
+
+animation-direction: --------------------------->Cambia la forma de la animacio (direccion de la animacion)
+
+animation-timing-function ---------------------->Para definir el limite de las repeticiones
+
+animation-fill-mode ---------------------------->Se queda como finaliza (forwards, both)
+
+animation-timing-function: cubic-bezier(1, 0, 0, 1) --->Crear la animacion con coordenadas, (hay paginas que la pueden realizar e ir a copiarla y pegarla)
+
+
+
+
+                                                                        /* Transform */
+
+
+Se puede utilizar en "hovers"
+Puede convinar 2 propiedades como (Translate y Transform)
+
+
+display: flex ------------------------------------->Se trabaja con flex
+
+transform: translateX() --------------------------->Traslada el objeto en el eje X
+
+transform: translateY() --------------------------->Traslada el objeto en el eje Y
+
+transform: translate(x,y) ------------------------->Traslada el objeto en ambos ejes <--------------------------AHORRA RECURSOS
+
+transform: scale(2) ------------------------------->Transforma la escala del elemento en el eje X
+
+transform: scale(2) ------------------------------->Transforma la escala del elemento en el eje Y
+
+transform: scale(2) ------------------------------->Transforma la escala del elemento en ambos ejes
+
+transition: transform 1s -------------------------->Tiempo de transformacion
+
+transform: skew(xdeg) ----------------------------->Angulo de transformacion
+
+clip-path: ---------------------------------------->Cambia la figura (buscar clip-path en intenet)
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 

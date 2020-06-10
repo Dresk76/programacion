@@ -1,0 +1,482 @@
+			/* CSS */
+
+	     *-* https://cssreference.io/ *-*
+
+
+
+*|*Comenzar
+
+	<link rel="stylesheet" href="estilos.css">
+
+
+*|*Fuentes descargadas
+
+	@font-face{
+    	src: url('carpeta/fuente.ttf');
+    	font-family: fuente.ttf;                                       
+	}
+
+
+
+*|*Para colocarle sombras a un titulo*|*
+
+	text-shadow: 5px 15px cornsilk;
+
+*|*Espacio entre las letras*|*
+
+	letter-spacing: 0px;
+
+*|*Grosor de la letra*|*
+
+	font-weight: 100;
+
+*|*Espacio vertical*|*
+
+	line-height: 1px;
+
+*|*Tacha todo el texto*|*
+
+	text-decoration: line-through;
+
+*|*Para quitar los digitos de las listas*|*
+
+	list-style: none;
+
+*|*Bajar el sroll lento*|*
+
+	scroll-behavior: smooth;
+
+*|*Lo que se sale de la pantalla, pone un scroll cuando lo requiere
+
+	overflow: auto;
+
+*|*Lo que se sale del contenedor, lo recorta
+
+	overflow: hidden;
+
+*|Sombra
+
+	box-shadow: 10px 15px 20px white;
+
+*|*Todas las clases que tengan x for example
+
+	[class*=x]{
+
+
+
+
+	 /* Pseudo-Clases y Elementos */                                                                      
+
+*|*Afecta al primer elemento*|*
+
+	h1:first-child
+
+*|*Afecta al ultimo elemento*|*
+
+	h1:last-child
+
+*|*Afecta a un elemento en especifico y va sumando*|*
+
+	h1:nth-child(0n+3){
+
+*|*Cambia el color de la primera linea del texto (No funciona para ningun "in-line")*|*
+
+	.x p::first-line
+
+*|*Cambia el color de la primera palabra del texto (No funciona para ningun "in-line")*|*
+
+	.x h1::first-letter
+
+*|* Cambia el color del placeholder*|*
+
+	x.text::placeholder
+
+
+*|*Cambia el tipo de selecionar en fondo y color de letra (como cuando se seleciona algo para copiarlo)*|*
+
+	x.text::selection
+
+*|*Para que tenga un cambio de color, antes de ingresar a el link*|*
+
+	a:link
+
+*|*Para que tenga un cambio de color, despues de visitar a el link*|*
+
+	a:visited
+
+*|*Para que el link cambie al dejar presionado*|*
+
+	a:active
+
+*|*Cambia cuando se clickea*|*
+
+	a:target
+
+*|*Para el textbox, cuando esten en él, cambie algo*|*
+
+	a:focus
+
+*|* Para poner la raya que hace referencia a que es un link*|*
+
+	text-decoration: underline;
+
+
+
+
+		/* Position */                                                                          
+
+
+Todos funcionan con, top,right,bottom,left
+
+position: absolute;
+
+position: relative;
+
+position: fixed;
+
+*|*Se comporta como un "fixed" cuando llegamos al punto en el que le decimos*|*
+
+	position: sticky;
+
+*|*Posiciona los objetos encima del otro, asi esten en HTML por debajo*|*
+
+	z-index: x;
+
+
+
+
+		/* Listas */                                                                           
+
+*|*Para agregar un icono personalizado en la lista*|*
+
+	list-style-image: url('icono.png');
+
+*|*Para desaparecer el icono*|*
+
+	list-style: none;
+
+*|*Cambiar numeros de lista a numeros Romanos*|*
+
+	list-style: upper-roman;
+
+*|*Cambiar numeros de lista a letras Mayusculas*|*
+
+	list-style: upper-latin;
+
+*|*Cambiar numeros de lista a letras Minusculas*|*
+
+	list-style: lower-latin;
+
+
+
+
+		 /* Imagenes y Fondo */
+                                                                  
+
+*|*Para redondear*|*
+
+	border-radius: 50%;
+
+*|*A las imagenes trransparentes les genera una especie de bordeado interno*|*
+
+	drop-shadow (x px,x px,x px #000)
+
+*|*BRUTAL!!!! Baja el srool y permanece el fondo o imagen contenedor*|*
+
+	background-attachment: fixed;
+
+*|*Contraste de la imagen (hay mas valores para probar)*|*
+
+	filter: contrast(1.5)
+
+*|*La imagen se adapta al contenedor*|*
+
+	object-fit: cover;
+
+*|*Muestra mas un lado de la imagen que deseemos*|*
+
+	object-position: left; --------------->
+
+*|*Quita el espaciado entre imagenes*|*
+
+	vertical-align: top;
+
+
+
+
+		/* FLEXBOX */ 
+
+                                                                          
+*-*display: flex*-*
+
+*|*Definir eje primario*|*
+
+	flex-direction: row
+	flex-direction: row-reverse
+	flex-direction: column
+	flex-direction: column-reverse
+
+
+*|*Pasa el elemento debajo, al reducir la pantalla*|*
+
+	flex-wrap: wrap
+	flex-wrap: wrap-reverse
+
+
+*|*direccion + wrap*|*
+
+	flex-flow: column wrap;
+
+
+*|*Alinear en el eje primario*|*
+
+	justify-content:
+
+
+*|*Alinear en el eje secundario*|*
+
+	align-items
+
+
+*|*Junta los elementos en el eje secundario y les da una alineacion*|*
+
+	align-content
+
+
+*|*Intercambiar elementos*|*
+
+	order:-x 0 x;
+
+*|*Reparte el espacio sobrante entre los elementos*|*
+
+	flex-grow: x;
+
+*|*Reparte el espacio faltante entre los elementos*|*
+
+	flex-shrink: x;
+
+*|*Da el tamaño al eje principal de width o height
+
+	flex-basis:
+
+*|*Da la direccion al item
+
+	align-self:
+
+
+
+
+		/* GRID */
+
+
+*-*display: grid;*-*
+
+*|*genera las columnas*|*
+ 
+	grid-template-columns: Xpx Xpx; ó repeat(2, Xpx/X%/1fr);
+                                                        
+*|*Genera la filas*|*
+
+	grid-template-rows: Xpx Xpx; ó repeat(2, Xpx/X%/1fr);
+
+*|*Ocupa el espacio de mas lineas de columnas*|*
+
+	grid-column: 1/3 (1 hasta la 3) ó span x (avance x);
+
+*|*Ocupa el espacio de mas lineas de filas*|*
+
+	grid-row: 1/3 (1 hasta la 3) ó span x (avance x);  
+
+*|*Espaciado entre columnas y filas*|*
+
+	gap: xpx xpx;
+
+*|*Cambia el flujo de filas a columnas*|*
+
+	grid-auto-flow: column;
+
+*|*Ocupa los espacios que quedan vacios*|*
+
+	grid-auto-flow: dense
+
+*|*Da un tamaño definido a lo que sale del flujo*|*
+
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
+
+*|*Crea tantas columnas o filas como permita tener xpx*|*
+
+	grid-template-columns: repeat(auto-fill,xpx)
+	grid-template-rows: repeat(auto-fill,xpx)
+
+*|*No van amedir menos de xpx ni mas de 1fr*|*
+
+	grid-template-columns: repeat(auto-fit,minmax(xpx,1fr))
+
+*|*Cambia el orden*|*
+
+	order: -1 0 1...
+
+*|*Como en flexbox*|*
+
+	justify-content
+
+*|*como justify-content pero Vertical*|*
+
+	align-content
+
+*|*Modifica un solo cuadro de diferentes maneras Horizontalmente*|*
+
+	align-self
+
+*|*Modifica un solo cuadro de diferentes maneras Verticalmente*|*
+
+	justify-self
+
+*|*Modifica todos los cuadros de distintas maneras Vertical*|*
+
+	justify-items
+
+*|*Modifica todos los cuadros de distintas maneras Horizontal*|*
+
+	align-items
+
+
+
+
+		 /* Responsive Design */
+
+
+@media screen and (max-width: 400px){
+
+
+		
+		/* Formularios */
+
+
+*|*Texto valido o invalido
+
+	elemento:valid{
+	elemento:invalid{
+
+
+*-*Outline*-*
+
+*|*Para los labels*|*
+
+	pointer-events: none;
+
+
+
+
+		/* Transform */
+
+
+*|*Traslada el elemento, el primero en X y el segundo en Y*|*
+
+	transform: translate(px , px)
+
+*|*Por defecto esta en el centro del plano cartesiano
+
+	transform-origin: center center ó 50% 50%;
+
+*|*Escala del elemento, el primero en X y el segundo en Y*|
+
+	transform: scale(x)
+
+*|*Rota el elemento en sentido reloj, se da en grados*|*
+
+	transform: rotate(xdeg)
+
+*|*Lo deforma*|*
+ 
+	transform: skew (xdeg)
+
+*|*Para hacer figuras
+
+	clip-path: circle()
+
+*|*Ocupa todo el contorno de una img svg
+
+	transform-box: fill-box;
+
+
+
+		/* Transition */
+
+
+*|*Transicion de la propiedad como por ejemplo a un background-color*|*
+
+	transition-property:
+
+*|*Tiempo de duracion*|*
+
+	transition-duration:
+
+*|*Cuanto tiempo va tardar en comenzar*|*
+
+	transition-delay:
+
+*|*Cambio de velocidad*|*
+
+	ease; / ease-in; / ease-out; / ease-in-out; / linear; 
+
+
+
+
+ 		/* Animaciones */
+
+
+*|*Como se declara*|*
+
+	@keyframes <nombre cualquiera>
+
+*|*punto inicial*|*
+
+	0%
+
+*|*Punto final*|*
+
+	100%
+
+*|*Luego en el elemnto deseado se establece*|*
+
+	 animation:<nombre cualquiera> <segundos>;
+
+*|*propiedades de la animacion*|*
+
+*animation-name: <nombre cualquiera>;
+
+*animation-duration: .6s; ó infinite;
+
+*animation-timing-function: easy;...
+
+*animation-delay: 1s; 
+		(tiempo en comenzar)
+
+*animation-interation-count: 2; infinit; 
+		(Numero repeticiones)
+
+*animation-direction: normal;
+
+		      reverse; (Invierte los porcentajes)
+
+*animation-direction: alternate; 
+		(No se reproduce brusco)
+
+*animation-direction: alternate-reverse; 
+	(No se reproduce brusco e invierte los porcentajes)
+
+
+*animation-fill-mode: backwards;
+(se ve desde el principio con el punto de partida del 0%)
+
+
+*animation-fill-mode: forwards;
+(Se queda la animacion en el porcentaje 100%)
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 

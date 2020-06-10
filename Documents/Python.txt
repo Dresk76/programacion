@@ -1,0 +1,79 @@
+			PYTHON
+
+
+<!-- ESTO ES LA CABECERA --> 
+
+
+*|*Ver la version*|*
+
+	python --version
+
+*|*Salir*|*
+
+	exit()
+
+*|*Ayuda*|*
+
+	python -h
+
+*|*Imprimir por pantalla*|*
+
+	print
+
+*|*Saber que tipo de dato es*|*
+
+	type
+
+*|*Unir o Concadenacion*|*
+
+	"letras" + "letras"
+
+
+*|*Strings=Letras*|*
+	print("Heloo World")
+
+*|*Integer= Numero entero*|*
+	print(30)
+
+*|*Float= Numero decimal*|*
+	print(60.7)
+
+*|*Bolean=True/False*|* 	
+	
+*|*List (Si se pueden cambiar)*|*
+	[10, 20, 30, 55]
+	['Hello', 'Bye', 'Adios']
+	['Hello', 10, True, 95.7]
+
+*|*Tuple (No se pueden cambiar)*|*
+	(10, 30, 195)
+
+*|*Dictionaries*|* (Agrupa distintos nombres de datos con un nombre clave)
+	{
+    "Nombre":"Iniciar",
+    "Apellido":"Sesion",
+    "Apodo":"Comenzar"
+}
+
+*|**|*
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
