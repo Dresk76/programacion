@@ -24,6 +24,7 @@ preserveAspectRatio="none"
 
 
 *-*Comprimir imagenes para que no pesen tanto al momento de subirlas*-*
+	https://tinypng.com
 
 	https://imagecompressor.com/es/
 

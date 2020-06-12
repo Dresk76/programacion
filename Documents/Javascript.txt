@@ -1,0 +1,11 @@
+		Javascript
+
+
+*|*Variable
+
+	var hola = "bien o que";
+	console.log(hola);
+
+
+console.log("Muestra esto en la consola");
+console.log(88+4);

@@ -53,7 +53,8 @@
     "Nombre":"Iniciar",
     "Apellido":"Sesion",
     "Apodo":"Comenzar"
-}
+	}
+
 
 *|**|*
 	
